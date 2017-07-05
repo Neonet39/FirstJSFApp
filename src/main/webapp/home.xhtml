@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>Not present in rendered output</title>
+</head>
+<body>
+<f:view>
+
+<h:form>
+
+
+<h:commandButton action="#{controlleone.Start()}"   value="voite" >
+
+    <f:param name="textinquire" value="Musik"/>
+    <f:param name="token" value="435ad97d6b23c083b5e1dc92876d2438994294bac24587f19ae1b32645b07a42f7672eac34ef34b78bdbf"/>
+
+#{controlleone.Result()}
+
+</h:commandButton>
+
+
+
+
+
+</h:form>
+
+</f:view>
+</body>
+</html>
