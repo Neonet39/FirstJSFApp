@@ -1,5 +1,6 @@
 package com.functionOne;
 
+import com.com.convert.JSON_parsing;
 import com.comonfunction.inquire.inquire;
 import org.json.simple.parser.JSONParser;
 
@@ -35,11 +36,9 @@ public class ControllerOneFunction implements Serializable {
         this.inq.respons();
         String s = this.inq.getResult().substring(4, this.inq.getResult().length());
 
-
-        JSONParser parser = new JSONParser();
-        Object obj = null;
-        //  try {
-        //    obj = parser.parse(s);
+        JSON_parsing json_parsing = new JSON_parsing();
+        json_parsing.groops(s);
+         //   obj = parser.parse(s);
         //    JSONObject jsonObj = (JSONObject) obj;
         //    JSONObject jsonObject = (JSONObject) jsonObj.get("respons");
 
