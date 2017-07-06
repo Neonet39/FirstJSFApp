@@ -10,6 +10,14 @@ public class ClassStructur {
     private int reach;
     private String name;
 
+
+
+    public ClassStructur(Object screen_name, Integer id, Object name) {
+        this.screen_name =(String) screen_name;
+        this.id = id;
+        this.name =(String) name;
+    }
+
     public int getId() {
         return id;
     }
