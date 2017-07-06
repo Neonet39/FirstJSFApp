@@ -1,10 +1,8 @@
 package com.functionOne;
 
-import com.com.convert.JSON_parsing;
 import com.com.convert.ParsingError.ChekError;
-import com.com.convert.Parsing_groop;
+import com.com.convert.Parsing_grop.Parsing_groop;
 import com.comonfunction.inquire.inquire;
-import org.json.simple.parser.JSONParser;
 
 
 import javax.faces.bean.ManagedBean;
@@ -43,19 +41,7 @@ public class ControllerOneFunction implements Serializable {
         if(error.check_error()){
             System.out.println("sdf");
         }
-       // pars.getList(s);
 
-         //   obj = parser.parse(s);
-        //    JSONObject jsonObj = (JSONObject) obj;
-        //    JSONObject jsonObject = (JSONObject) jsonObj.get("respons");
-
-        //     JsonArray ja = (JsonArray) jsonObject.get("items");
-
-
-        // } catch (ParseException e) {
-        //  e.printStackTrace();
-        // }
-        //}
 
     }
     public String Result() {
