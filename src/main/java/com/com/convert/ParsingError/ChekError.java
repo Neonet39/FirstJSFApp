@@ -2,6 +2,7 @@ package com.com.convert.ParsingError;
 
 import com.com.convert.Interface.Error;
 import com.com.convert.JSON_parsing;
+import org.json.simple.JSONObject;
 
 /**
  * Created by Evgeny on 06.07.2017.
@@ -15,18 +16,22 @@ public class ChekError extends JSON_parsing implements Error {
 
     @Override
     public boolean check_error() {
-        fromObject(this.check);
         try {
-            this.jsonObj.get("error");
-            return true;
-        }catch (Exception e) {
+            fromObject(this.check);
+            String s = (String) this.jsonObj.get("error");
+            if(s.equals("null"))
+                return false;
+            else return true;
+        }catch (Exception e){
             return false;
         }
+
+
     }
 
     @Override
     public boolean check_errorSix() {
-        if (check_error()){
+
             try {
                 if( getJson("error").get("error_code").toString().equals("6"))
                     return true; else return false;
@@ -34,8 +39,7 @@ public class ChekError extends JSON_parsing implements Error {
                 return false;
             }
 
-        }else
-        return false;
+
     }
 
     @Override

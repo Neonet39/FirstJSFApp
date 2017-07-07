@@ -1,13 +1,9 @@
 package com.com.convert;
 
-import com.com.structur.ArrayStructur;
-import com.com.structur.ClassStructur;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
-import java.util.ArrayList;
 
 /**
  * Created by Evgeny on 05.07.2017.

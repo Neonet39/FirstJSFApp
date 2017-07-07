@@ -26,7 +26,7 @@ public class Parsing_Stat extends JSON_parsing implements Parsing_Statick {
         JSONArray array = getJsonArry(fromObject(this.parsingText),"response");
         for (int i=0;i<=array.size();i++){
            JSONObject object = (JSONObject) array.get(i);
-           sum += Double.valueOf(object.get("reach").toString());
+          // System.out.println(object.get("reach").toString());
         }
 
         return String.valueOf(sum/array.size());
